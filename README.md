@@ -1,11 +1,10 @@
 <p align="center">
-  <img src="![FarmConnectLogo](https://github.com/user-attachments/assets/d7e4f209-c196-4030-a022-10744d05c1b8)
-" alt="Local Farmer Marketplace Logo" width="200"/>
+  <img src="FarmConnectLogo" alt="Farm Connect Logo" width="200"/>
 </p>
 
-# **Local Farmer Marketplace**
+# **Farm Connect**
 
-A web application designed to connect small-scale farmers directly with local consumers and businesses, providing a digital platform for farmers to list and sell their produce. The platform aims to reduce food waste, support local agriculture, and provide consumers with access to fresh, locally sourced products.
+Farm Connect is a web application designed to connect small-scale farmers directly with local consumers and businesses, providing a digital platform for farmers to list and sell their produce. The platform aims to reduce food waste, support local agriculture, and provide consumers with access to fresh, locally-sourced products.
 
 ---
 
@@ -26,7 +25,7 @@ A web application designed to connect small-scale farmers directly with local co
 
 ## **Project Overview**
 
-Many small farmers struggle to connect with consumers and businesses due to limited marketing resources and the dominance of larger competitors. This project creates a direct-to-consumer marketplace that supports local farmers by providing an accessible digital platform. The application allows farmers to manage product listings and customers to order fresh, affordable produce from local sources.
+Many small farmers struggle to connect with consumers and businesses due to limited marketing resources and the dominance of larger competitors. Farm Connect creates a direct-to-consumer marketplace that supports local farmers by providing an accessible digital platform. The application allows farmers to manage product listings and customers to order fresh, affordable produce from local sources.
 
 ## **Features**
 
@@ -51,7 +50,7 @@ Many small farmers struggle to connect with consumers and businesses due to limi
 ## **Technology Stack**
 
 ### **LAMP Stack**
-- **Linux**: The operating system used to host the application.
+- **Linux**: Operating system used to host the application.
 - **Apache**: Web server used to serve the application.
 - **MySQL**: Database for managing users, products, and orders.
 - **PHP**: Backend scripting language for server-side functionality.
@@ -63,11 +62,11 @@ Many small farmers struggle to connect with consumers and businesses due to limi
 
 ## **System Architecture**
 
-The project follows a traditional LAMP architecture with a clear separation between frontend and backend functionality. Here’s an overview:
+Farm Connect follows a traditional LAMP architecture with a clear separation between frontend and backend functionality. Here’s an overview:
 
 1. **Frontend**: Built with HTML, CSS, and JavaScript to handle user interactions and provide a clean, intuitive interface.
 2. **Backend**: PHP scripts handle CRUD operations for product management, user authentication, and order processing.
-3. **Database**: The MySQL database stores essential data for users, products, and orders. PHP manages queries to provide seamless data interaction.
+3. **Database**: MySQL database stores essential data for users, products, and orders. Queries are managed through PHP to provide seamless data interaction.
 
 ---
 
@@ -88,7 +87,7 @@ The database includes the following tables:
 
 ## **Installation**
 
-To set up the project on your local environment, follow these steps:
+To set up Farm Connect on your local environment, follow these steps:
 
 1. **Install the LAMP Stack**  
    Ensure you have the LAMP stack installed:
@@ -99,5 +98,5 @@ To set up the project on your local environment, follow these steps:
 
 2. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/local-farmer-marketplace.git
-   cd local-farmer-marketplace
+   git clone https://github.com/your-username/farm-connect.git
+   cd farm-connect
