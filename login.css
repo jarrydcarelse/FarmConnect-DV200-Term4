@@ -1,0 +1,98 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    position: relative; /* Required for the pseudo-element */
+    overflow: hidden; /* Prevent scrolling if content overflows */
+}
+
+/* Pseudo-element for the background logo */
+body::before {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute; /* Position it absolutely */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-image: url('img/logo.png'); /* Path to your logo image */
+    background-size: contain; /* Adjust to 'contain' so the whole logo fits */
+    background-position: left center; /* Align the logo to the left */
+    background-repeat: no-repeat; /* Prevent repetition of the image */
+    opacity: 0.3; /* Set the opacity as needed */
+    z-index: -1; /* Place it behind other elements */
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Required to ensure the container is above the background */
+}
+
+h2 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.error-message {
+    color: #d9534f;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #388E3C;
+}
+
+/* Home Button */
+.home-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4CAF50;
+    text-decoration: none;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #4CAF50;
+    color: #ffffff;
+}

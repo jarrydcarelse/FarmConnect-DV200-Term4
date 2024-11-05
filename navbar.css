@@ -1,0 +1,142 @@
+/* Navbar Styling */
+header {
+    background: linear-gradient(to right, #006507, #43a047); /* Green gradient */
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap; /* Prevents links from wrapping to a new line */
+}
+
+/* Logo on the Far Left */
+.logo {
+    flex-shrink: 0; /* Prevents the logo from shrinking */
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo-img {
+    width: 80px; /* Slightly smaller logo */
+    height: auto;
+    margin-right: 8px;
+}
+
+.site-name {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Centered Navigation Links */
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 0;
+    flex-grow: 1;
+    overflow: auto; /* Ensures links stay on one line */
+}
+
+.nav-links li a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: #165a00;
+    text-decoration-thickness: 4px;
+}
+
+/* Right-Aligned Auth Links */
+.auth-links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0; /* Prevents the auth links from shrinking */
+}
+
+/* Login, Register, and Logout Buttons */
+.btn {
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.btn-login {
+    background-color: #2e7d32;
+}
+
+.btn-register {
+    background-color: #1e88e5;
+}
+
+.btn-logout {
+    background-color: #ff4848e2;
+}
+
+.btn-login:hover, .btn-register:hover, .btn-logout:hover {
+    opacity: 0.9;
+}
+
+/* Cart Icon */
+.cart-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.cart-icon {
+    width: 40px; /* Updated width */
+    height: 40px; /* Updated height */
+    /* You can also add this to maintain aspect ratio */
+    object-fit: contain; /* Ensure the icon maintains its aspect ratio */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .nav-links {
+        gap: 10px; /* Smaller gap for medium screens */
+    }
+
+    .nav-links li a, .auth-links .btn, .site-name {
+        font-size: 16px; /* Smaller text for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    header nav {
+        flex-wrap: nowrap; /* Prevents wrapping on small screens */
+    }
+
+    .logo-img {
+        width: 50px; /* Smaller logo on small screens */
+    }
+
+    .nav-links {
+        gap: 5px; /* Minimize gap further for small screens */
+    }
+
+    .nav-links li a, .auth-links .btn, .site-name {
+        font-size: 14px; /* Reduce font size on smaller screens */
+    }
+}

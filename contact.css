@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    position: relative; /* Required for the absolute positioning of the overlay */
+}
+
+/* Pseudo-element for the background image */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/contact-background.jpg'); /* Replace with your background image path */
+    background-size: cover; /* Cover the entire body */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition of the image */
+    opacity: 0.5; /* Set the opacity for the background image */
+    z-index: -1; /* Place the background behind other elements */
+}
+
+.contact-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto; /* Centering the contact form */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* White background with some transparency */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+    color: #4CAF50; /* Green color for the heading */
+    text-align: center;
+}
+
+.contact-container p {
+    margin-bottom: 20px;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-container button {
+    background-color: #4CAF50; /* Green background for the button */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contact-container button:hover {
+    background-color: #388E3C; /* Darker green on hover */
+}
+
+/* Remove overflow:hidden from body */

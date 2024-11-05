@@ -1,0 +1,44 @@
+body {
+  
+    color: #333;
+    background-image: url('img/farm.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensure the image covers the entire body */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition of the image */
+}
+
+.order-management {
+    max-width: 800px;
+    margin: 20px auto; /* Center the content */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.order-item h4 {
+    margin: 0;
+    color: #4CAF50; /* Green color for headings */
+}
+
+.order-item p {
+    margin: 5px 0;
+}
+
+.btn-fulfill {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-fulfill:hover {
+    background-color: #388E3C;
+}
