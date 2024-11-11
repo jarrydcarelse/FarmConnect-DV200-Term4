@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="FarmConnectLogo.png" alt="Farm Connect Logo" width="200"/>
+  <img src="headerfc.jpg" alt="header" width="100%"/>
 </p>
 
 # **Farm Connect**
