@@ -22,6 +22,9 @@ Farm Connect is a web application designed to connect small-scale farmers direct
 - [License](#license)
 
 ---
+## Demo Video
+
+[Watch the FarmConnect Demo Video](https://drive.google.com/file/d/1_SJ714DMIhsukL3xh-SRhtYNccZPt8Z8/view?usp=sharing)
 
 ## **Project Overview**
 
